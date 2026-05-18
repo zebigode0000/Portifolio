@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Portfólio | Desenvolvedor Front-end</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        // Configuração para ativar o dark mode via classe no Tailwind
+        tailwind.config = {
+            darkMode: 'class',
+        }
+    </script>
+    <!-- Ícones (FontAwesome) para os links e botão -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-zinc-50 text-zinc-900 dark:bg-zinc-950 dark:text-zinc-50 transition-colors duration-300 min-h-screen flex flex-col font-sans">
+
+    <!-- HEADER / NAV -->
+    <header class="sticky top-0 z-50 backdrop-blur-md bg-white/70 dark:bg-zinc-950/70 border-b border-zinc-200 dark:border-zinc-800 transition-colors duration-300">
+        <div class="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
+            <!-- Logo / Nome -->
+            <a href="#" class="text-xl font-bold tracking-tight hover:opacity-80 transition-opacity">
+                Augustowebp.<span class="text-indigo-600 dark:text-indigo-400">portfolio</span>
+            </a>
+
+            <!-- Navegação e Botão de Dark Mode -->
+            <div class="flex items-center gap-6">
+                <nav class="hidden sm:flex items-center gap-6 text-sm font-medium text-zinc-600 dark:text-zinc-400">
+                    <a href="#projetos" class="hover:text-zinc-900 dark:hover:text-zinc-50 transition-colors">Projetos</a>
+                    <a href="#sobre" class="hover:text-zinc-900 dark:hover:text-zinc-50 transition-colors">Sobre</a>
+                </nav>
+
+                <!-- Linha divisória -->
+                <span class="hidden sm:block h-5 w-px bg-zinc-200 dark:bg-zinc-800"></span>
+
+                <!-- Botão Alternador de Modo -->
+                <button id="btn-theme" class="p-2 rounded-lg bg-zinc-100 dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 hover:bg-zinc-200 dark:hover:bg-zinc-800 transition-all text-zinc-700 dark:text-zinc-300" aria-label="Alternar tema">
+                    <i id="theme-icon" class="fa-solid fa-moon text-lg dark:hidden"></i>
+                    <i id="theme-icon-dark" class="fa-solid fa-sun text-lg hidden dark:block"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="max-w-4xl mx-auto px-4 pt-24 pb-16 text-center sm:text-left flex flex-col gap-4">
+        <span class="text-sm font-semibold tracking-wider uppercase text-indigo-600 dark:text-indigo-400">Desenvolvedor Front-end</span>
+        <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight leading-none">
+            Transformando ideias em código sólido e interfaces limpas.
+        </h1>
+        <p class="text-lg text-zinc-600 dark:text-zinc-400 max-w-2xl mt-2">
+            Explore abaixo a galeria dos principais projetos que desenvolvi, focando em performance, semântica e layouts responsivos.
+        </p>
+        <div class="flex items-center justify-center sm:justify-start gap-4 mt-4">
+            <a href="#projetos" class="px-5 py-2.5 bg-zinc-900 text-zinc-50 dark:bg-zinc-100 dark:text-zinc-900 rounded-lg font-medium hover:opacity-90 transition-opacity">
+                Ver Projetos
+            </a>
+            <a href="https://github.com/zebigode0000" target="_blank" class="p-2.5 rounded-lg border border-zinc-200 dark:border-zinc-800 hover:bg-zinc-100 dark:hover:bg-zinc-900 transition-colors" aria-label="GitHub" target="_blank">
+                <i class="fa-brands fa-github text-xl"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- SEÇÃO DE PROJETOS -->
+    <main id="projetos" class="max-w-6xl mx-auto px-4 py-16 flex-grow w-full scroll-mt-16">
+        <div class="flex flex-col gap-2 mb-10">
+            <h2 class="text-2xl font-bold tracking-tight">Projetos em Destaque</h2>
+            <p class="text-zinc-600 dark:text-zinc-400 text-sm">Uma seleção dos meus últimos trabalhos desenvolvidos.</p>
+        </div>
+
+        <!-- Grid de Cards dos Projetos -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            
+            <!-- CARD 1 -->
+            <div class="group flex flex-col bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 rounded-xl overflow-hidden hover:shadow-lg dark:hover:shadow-zinc-900/50 transition-all">
+                <div class="bg-zinc-200 dark:bg-zinc-800 aspect-video w-full flex items-center justify-center text-zinc-400 relative overflow-hidden">
+                    <i class="fa-solid fa-bolt text-4xl group-hover:scale-110 transition-transform duration-300"></i>
+                </div>
+                <div class="p-5 flex flex-col flex-grow gap-3">
+                    <div class="flex items-center justify-between">
+                        <h3 class="font-bold text-lg group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition-colors">Postagem de Posts</h3>
+                        <span class="text-xs px-2 py-1 bg-indigo-50 dark:bg-indigo-950/50 text-indigo-600 dark:text-indigo-400 rounded border border-indigo-100 dark:border-indigo-900/50 font-medium">React</span>
+                    </div>
+                    <p class="text-zinc-600 dark:text-zinc-400 text-sm flex-grow">
+                        Interface de feed responsiva que utiliza o Vite para builds rápidos e otimizados. O projeto foca na modularidade de componentes e na manipulação eficiente de arrays de objetos locais para exibir conteúdos de forma fluida.
+                    </p>
+                    <div class="flex flex-wrap gap-1.5 text-xs font-mono text-zinc-500 dark:text-zinc-400">
+                        <span>#ReactJS</span>
+                        <span>#TailwindCSS</span>
+                        <span>#JavaScript</span>
+                        <span>#Vite</span>
+                        <span>#Responsividade</span>
+                    </div>
+                    <div class="flex items-center gap-4 pt-2 mt-auto border-t border-zinc-100 dark:border-zinc-800 text-sm font-medium">
+                        <a href="https://posts-page-phi.vercel.app/#" class="hover:underline flex items-center gap-1" target="_blank">Demo <i class="fa-solid fa-arrow-up-right-from-square text-xs"></i></a>
+                        <a href="https://github.com/zebigode0000/postsPage.git" target="_blank" class="hover:underline flex items-center gap-1 text-zinc-500 dark:text-zinc-400">Código <i class="fa-brands fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CARD 2 -->
+            <div class="group flex flex-col bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 rounded-xl overflow-hidden hover:shadow-lg dark:hover:shadow-zinc-900/50 transition-all">
+                <div class="bg-zinc-200 dark:bg-zinc-800 aspect-video w-full flex items-center justify-center text-zinc-400">
+                    <i class="fa-solid fa-palette text-4xl group-hover:scale-110 transition-transform duration-300"></i>
+                </div>
+                <div class="p-5 flex flex-col flex-grow gap-3">
+                    <div class="flex items-center justify-between">
+                        <h3 class="font-bold text-lg group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition-colors">Landing Page Internacional</h3>
+                        <span class="text-xs px-2 py-1 bg-zinc-100 dark:bg-zinc-800 rounded border border-zinc-200 dark:border-zinc-700 font-medium">Freelance</span>
+                    </div>
+                    <p class="text-zinc-600 dark:text-zinc-400 text-sm flex-grow">
+                        Landing page premium internacional com estética minimalistapara o mercado gringo. O projeto foca em tipografia elegante, fluxo de conversão otimizado sem dependência de APIs locais de mensagem (como WhatsApp) e persistência nativa de tema light.
+                    </p>
+                    <div class="flex flex-wrap gap-1.5 text-xs font-mono text-zinc-500 dark:text-zinc-400">
+                        <span>#HTML5</span>
+                        <span>#TailwindCSS</span>
+                        <span>#UI-Design</span>
+                        <span>#Gsap</span>
+                        <span>#Responsividade</span>
+                    </div>
+                    <div class="flex items-center gap-4 pt-2 mt-auto border-t border-zinc-100 dark:border-zinc-800 text-sm font-medium">
+                        <a href="https://fernandagusman.com" class="hover:underline flex items-center gap-1" target="_blank">Demo <i class="fa-solid fa-arrow-up-right-from-square text-xs"></i></a>
+                        <a href="https://github.com/zebigode0000/PiercingFernanda.git" class="hover:underline flex items-center gap-1 text-zinc-500 dark:text-zinc-400" target="_blank">Código <i class="fa-brands fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CARD 3 -->
+            <div class="group flex flex-col bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 rounded-xl overflow-hidden hover:shadow-lg dark:hover:shadow-zinc-900/50 transition-all">
+                <div class="bg-zinc-200 dark:bg-zinc-800 aspect-video w-full flex items-center justify-center text-zinc-400">
+                    <i class="fa-solid fa-cubes text-4xl group-hover:scale-110 transition-transform duration-300"></i>
+                </div>
+                <div class="p-5 flex flex-col flex-grow gap-3">
+                    <div class="flex items-center justify-between">
+                        <h3 class="font-bold text-lg group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition-colors">Pagina de Vendas de Site</h3>
+                        <span class="text-xs px-2 py-1 bg-indigo-50 dark:bg-indigo-950/50 text-indigo-600 dark:text-indigo-400 rounded border border-indigo-100 dark:border-indigo-900/50 font-medium">Freelance</span>
+                    </div>
+                    <p class="text-zinc-600 dark:text-zinc-400 text-sm flex-grow">
+                        Minha landing page institucional de vendas criada para captação de clientes e conversão de novos projetos. Desenvolvida com foco em SEO local, carregamento ultra-rápido com Tailwind CSS e gatilhos visuais estratégicos integrados a uma identidade visual moderna e de alto impacto.
+                    </p>
+                    <div class="flex flex-wrap gap-1.5 text-xs font-mono text-zinc-500 dark:text-zinc-400">
+                        <span>#HTML5</span>
+                        <span>#TailwindCSS</span>
+                        <span>#JavaScript</span>
+                        <span>#UIUX</span>
+                        <span>#Responsividade</span>
+                    </div>
+                    <div class="flex items-center gap-4 pt-2 mt-auto border-t border-zinc-100 dark:border-zinc-800 text-sm font-medium">
+                        <a href="https://augustowebp.vercel.app" class="hover:underline flex items-center gap-1" target="_blank">Demo <i class="fa-solid fa-arrow-up-right-from-square text-xs"></i></a>
+                        <a href="https://github.com/zebigode0000/sellPage.git" class="hover:underline flex items-center gap-1 text-zinc-500 dark:text-zinc-400" target="_blank">Código <i class="fa-brands fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CARD 4 -->
+            <div class="group flex flex-col bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 rounded-xl overflow-hidden hover:shadow-lg dark:hover:shadow-zinc-900/50 transition-all">
+                <div class="bg-zinc-200 dark:bg-zinc-800 aspect-video w-full flex items-center justify-center text-zinc-400">
+                    <i class="fa-solid fa-layer-group text-4xl group-hover:scale-110 transition-transform duration-300"></i>
+                </div>
+                <div class="p-5 flex flex-col flex-grow gap-3">
+                    <div class="flex items-center justify-between">
+                        <h3 class="font-bold text-lg group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition-colors">Site Institucional</h3>
+                        <span class="text-xs px-2 py-1 bg-zinc-100 dark:bg-zinc-800 rounded border border-zinc-200 dark:border-zinc-700 font-medium">Estudo</span>
+                    </div>
+                    <p class="text-zinc-600 dark:text-zinc-400 text-sm flex-grow">
+                        Site institucional desenvolvido para o nicho de marmorarias e acabamentos de alto padrão. O projeto foi construído com foco em SEO semântico para ranqueamento local, otimização de carregamento de imagens de alta resolução (catálogo) e layouts responsivos adaptados para dispositivos móveis.
+                    </p>
+                    <div class="flex flex-wrap gap-1.5 text-xs font-mono text-zinc-500 dark:text-zinc-400">
+                        <span>#TailwindCSS</span>
+                        <span>#HTML5</span>
+                        <span>#UIUX</span>  
+                        <span>#Responsividade</span>
+                    </div>
+                    <div class="flex items-center gap-4 pt-2 mt-auto border-t border-zinc-100 dark:border-zinc-800 text-sm font-medium">
+                        <a href="#" class="hover:underline flex items-center gap-1">Demo <i class="fa-solid fa-arrow-up-right-from-square text-xs"></i></a>
+                        <a href="#" class="hover:underline flex items-center gap-1 text-zinc-500 dark:text-zinc-400">Código <i class="fa-brands fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CARD 5 -->
+            <div class="group flex flex-col bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 rounded-xl overflow-hidden hover:shadow-lg dark:hover:shadow-zinc-900/50 transition-all">
+                <div class="bg-zinc-200 dark:bg-zinc-800 aspect-video w-full flex items-center justify-center text-zinc-400">
+                    <i class="fa-solid fa-sliders text-4xl group-hover:scale-110 transition-transform duration-300"></i>
+                </div>
+                <div class="p-5 flex flex-col flex-grow gap-3">
+                    <div class="flex items-center justify-between">
+                        <h3 class="font-bold text-lg group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition-colors">Dashboard de Integração</h3>
+                        <span class="text-xs px-2 py-1 bg-zinc-100 dark:bg-zinc-800 rounded border border-zinc-200 dark:border-zinc-700 font-medium">Estudo</span>
+                    </div>
+                    <p class="text-zinc-600 dark:text-zinc-400 text-sm flex-grow">
+                        Painel administrativo simplificado com visualização de dados, focado em boas práticas de arquitetura de pastas e reutilização de código.
+                    </p>
+                    <div class="flex flex-wrap gap-1.5 text-xs font-mono text-zinc-500 dark:text-zinc-400">
+                        <span>#JavaScript</span>
+                        <span>#TailwindCSS</span>
+                        <span>#NextJS</span>
+                    </div>
+                    <div class="flex items-center gap-4 pt-2 mt-auto border-t border-zinc-100 dark:border-zinc-800 text-sm font-medium">
+                        <a href="#" class="hover:underline flex items-center gap-1">Demo <i class="fa-solid fa-arrow-up-right-from-square text-xs"></i></a>
+                        <a href="#" class="hover:underline flex items-center gap-1 text-zinc-500 dark:text-zinc-400">Código <i class="fa-brands fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- SEÇÃO SOBRE MINIMALISTA -->
+    <section id="sobre" class="border-t border-zinc-200 dark:border-zinc-800 bg-zinc-100/50 dark:bg-zinc-900/30 scroll-mt-16 transition-colors duration-300">
+        <div class="max-w-4xl mx-auto px-4 py-16 flex flex-col sm:flex-row gap-8 items-start">
+            <div class="sm:w-1/3">
+                <h2 class="text-xl font-bold tracking-tight mb-2">Sobre meu fluxo</h2>
+                <p class="text-xs text-zinc-500 font-mono">stack & ferramentas</p>
+            </div>
+            <div class="sm:w-2/3 text-zinc-600 dark:text-zinc-400 text-sm space-y-4">
+                <p>
+                    Sou focado no desenvolvimento de interfaces limpas, rápidas e totalmente responsivas. Acredito que um bom site se destaca pela qualidade do código subjacente, acessibilidade e respeito aos padrões da web.
+                </p>
+                <div class="flex flex-wrap gap-2 pt-2">
+                    <span class="px-2.5 py-1 bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 rounded-md text-xs">HTML5 / Semantica</span>
+                    <span class="px-2.5 py-1 bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 rounded-md text-xs">CSS3 / Tailwind CSS</span>
+                    <span class="px-2.5 py-1 bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 rounded-md text-xs">ReactJS / React Hooks</span>
+                    <span class="px-2.5 py-1 bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 rounded-md text-xs">Vite</span>
+                    <span class="px-2.5 py-1 bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 rounded-md text-xs">JavaScript / TypeScript</span>
+                    <span class="px-2.5 py-1 bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 rounded-md text-xs">Git / GitHub</span>
+                    <span class="px-2.5 py-1 bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 rounded-md text-xs">Mobile First Design</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="border-t border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-950 transition-colors duration-300">
+        <div class="max-w-6xl mx-auto px-4 h-16 flex flex-col sm:flex-row items-center justify-between gap-4 py-10 sm:py-0">
+            <p class="text-xs text-zinc-500">&copy; 2026. Desenvolvido em HTML & Tailwind CSS.</p>
+            <div class="flex items-center gap-4 text-zinc-500 dark:text-zinc-400 text-lg">
+                <a href="https://github.com/zebigode0000" target="_blank" class="hover:text-zinc-900 dark:hover:text-zinc-50 transition-colors"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/augustoteix" target="_blank" class="hover:text-zinc-900 dark:hover:text-zinc-50 transition-colors"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://www.instagram.com/augustowebp/" target="_blank" class="hover:text-zinc-900 dark:hover:text-zinc-50 transition-colors"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- SCRIPT PARA ALTERNAGEM DE TEMA (DARK/LIGHT) -->
+    <script>
+        const btnTheme = document.getElementById('btn-theme');
+        const htmlElement = document.documentElement;
+
+        // Verifica preferência anterior salva ou padrão do sistema
+        if (localStorage.getItem('theme') === 'light' || (!('theme' in localStorage) && !window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            htmlElement.classList.remove('dark');
+        } else {
+            htmlElement.classList.add('dark');
+        }
+
+        // Evento de clique para alternar a classe 'dark' do elemento html
+        btnTheme.addEventListener('click', () => {
+            if (htmlElement.classList.contains('dark')) {
+                htmlElement.classList.remove('dark');
+                localStorage.setItem('theme', 'light');
+            } else {
+                htmlElement.classList.add('dark');
+                localStorage.setItem('theme', 'dark');
+            }
+        });
+    </script>
+</body>
+</html>
