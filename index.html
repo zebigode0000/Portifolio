@@ -553,9 +553,10 @@
   <!-- Container da Timeline (Linha guia na lateral esquerda) -->
   <div class="relative border-l-2 border-zinc-200 dark:border-zinc-800 ml-4 md:ml-6 space-y-12 pb-4">
 
-    <div class="relative pl-8 group">
-      <!-- Bolinha indicadora -->
-      <div class="absolute -left-[9px] top-7 w-4 h-4 rounded-full bg-zinc-200 dark:bg-zinc-800 border-4 border-white dark:border-zinc-950 group-hover:bg-indigo-600 dark:group-hover:bg-indigo-400 transition-colors duration-300"></div>
+    <!-- ITEM 1: TÉCNICO -->
+    <div class="relative pl-8 group timeline-item">
+      <!-- Bolinha indicadora (Adicionado a classe 'timeline-dot') -->
+      <div class="timeline-dot absolute -left-[9px] top-7 w-4 h-4 rounded-full bg-zinc-200 dark:bg-zinc-800 border-4 border-white dark:border-zinc-950 group-hover:bg-indigo-600 dark:group-hover:bg-indigo-400 transition-all duration-300"></div>
       
       <!-- Card com Largura Total -->
       <div class="w-full bg-white dark:bg-zinc-900/40 border border-zinc-200 dark:border-zinc-800/80 p-6 md:p-8 rounded-3xl shadow-sm hover:shadow-md hover:border-indigo-500/50 dark:hover:border-indigo-400/50 transition-all duration-300">
@@ -566,7 +567,7 @@
               <i class="fa-solid fa-code text-purple-600 dark:text-purple-400"></i>
             </div>
             <div>
-              <h3 class="text-xl font-bold text-zinc-900 dark:text-zinc-100">Técnino de TI</h3>
+              <h3 class="text-xl font-bold text-zinc-900 dark:text-zinc-100">Técnico de TI</h3>
               <p class="text-zinc-500 dark:text-zinc-400 font-medium text-sm">Colégio ENIAC</p>
             </div>
           </div>
@@ -588,15 +589,14 @@
       </div>
     </div>
     
-    <!-- ITEM 1: ESTÁGIO NO ENIAC -->
-    <div class="relative pl-8 group">
-      <!-- Bolinha indicadora que acende no hover -->
-      <div class="absolute -left-[9px] top-7 w-4 h-4 rounded-full bg-zinc-200 dark:bg-zinc-800 border-4 border-white dark:border-zinc-950 group-hover:bg-indigo-600 dark:group-hover:bg-indigo-400 transition-colors duration-300"></div>
+    <!-- ITEM 2: ESTÁGIO NO ENIAC -->
+    <div class="relative pl-8 group timeline-item">
+      <!-- Bolinha indicadora (Adicionado a classe 'timeline-dot') -->
+      <div class="timeline-dot absolute -left-[9px] top-7 w-4 h-4 rounded-full bg-zinc-200 dark:bg-zinc-800 border-4 border-white dark:border-zinc-950 group-hover:bg-indigo-600 dark:group-hover:bg-indigo-400 transition-all duration-300"></div>
       
       <!-- Card com Largura Total -->
       <div class="w-full bg-white dark:bg-zinc-900/40 border border-zinc-200 dark:border-zinc-800/80 p-6 md:p-8 rounded-3xl shadow-sm hover:shadow-md hover:border-indigo-500/50 dark:hover:border-indigo-400/50 transition-all duration-300">
         
-        <!-- Cabeçalho do Card expandido -->
         <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-6">
           <div class="flex items-center gap-4">
             <div class="w-12 h-12 rounded-2xl bg-indigo-50 dark:bg-indigo-950/50 border border-indigo-100 dark:border-indigo-900/50 flex items-center justify-center flex-shrink-0">
@@ -625,41 +625,41 @@
       </div>
     </div>
 
-    <!-- ITEM 2: PROJETOS INDEPENDENTES (A sua venda de sites envelopada profissionalmente) -->
-    <div class="relative pl-8 group">
-  <!-- Bolinha indicadora -->
-  <div class="absolute -left-[9px] top-7 w-4 h-4 rounded-full bg-zinc-200 dark:bg-zinc-800 border-4 border-white dark:border-zinc-950 group-hover:bg-indigo-600 dark:group-hover:bg-indigo-400 transition-colors duration-300"></div>
-  
-  <!-- Card com Largura Total -->
-  <div class="w-full bg-white dark:bg-zinc-900/40 border border-zinc-200 dark:border-zinc-800/80 p-6 md:p-8 rounded-3xl shadow-sm hover:shadow-md hover:border-indigo-500/50 dark:hover:border-indigo-400/50 transition-all duration-300">
-    
-    <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-6">
-      <div class="flex items-center gap-4">
-        <div class="w-12 h-12 rounded-2xl bg-purple-50 dark:bg-purple-950/50 border border-purple-100 dark:border-purple-900/50 flex items-center justify-center flex-shrink-0">
-          <i class="fa-solid fa-code text-purple-600 dark:text-purple-400"></i>
-        </div>
-        <div>
-          <h3 class="text-xl font-bold text-zinc-900 dark:text-zinc-100">Desenvolvedor Front-end</h3>
-          <p class="text-zinc-500 dark:text-zinc-400 font-medium text-sm">Projetos Autônomos</p>
-        </div>
-      </div>
+    <!-- ITEM 3: PROJETOS INDEPENDENTES -->
+    <div class="relative pl-8 group timeline-item">
+      <!-- Bolinha indicadora (Adicionado a classe 'timeline-dot') -->
+      <div class="timeline-dot absolute -left-[9px] top-7 w-4 h-4 rounded-full bg-zinc-200 dark:bg-zinc-800 border-4 border-white dark:border-zinc-950 group-hover:bg-indigo-600 dark:group-hover:bg-indigo-400 transition-all duration-300"></div>
       
-      <div class="inline-flex items-center justify-center px-4 py-1.5 rounded-full bg-zinc-100 dark:bg-zinc-800 text-xs font-semibold text-zinc-600 dark:text-zinc-300 self-start sm:self-center">
-        2026 - Atual
+      <!-- Card com Largura Total -->
+      <div class="w-full bg-white dark:bg-zinc-900/40 border border-zinc-200 dark:border-zinc-800/80 p-6 md:p-8 rounded-3xl shadow-sm hover:shadow-md hover:border-indigo-500/50 dark:hover:border-indigo-400/50 transition-all duration-300">
+        
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-6">
+          <div class="flex items-center gap-4">
+            <div class="w-12 h-12 rounded-2xl bg-purple-50 dark:bg-purple-950/50 border border-purple-100 dark:border-purple-900/50 flex items-center justify-center flex-shrink-0">
+              <i class="fa-solid fa-code text-purple-600 dark:text-purple-400"></i>
+            </div>
+            <div>
+              <h3 class="text-xl font-bold text-zinc-900 dark:text-zinc-100">Desenvolvedor Front-end</h3>
+              <p class="text-zinc-500 dark:text-zinc-400 font-medium text-sm">Projetos Autônomos</p>
+            </div>
+          </div>
+          
+          <div class="inline-flex items-center justify-center px-4 py-1.5 rounded-full bg-zinc-100 dark:bg-zinc-800 text-xs font-semibold text-zinc-600 dark:text-zinc-300 self-start sm:self-center">
+            2026 - Atual
+          </div>
+        </div>
+
+        <p class="text-purple-600 dark:text-purple-400 font-semibold text-sm tracking-wide uppercase mb-4 flex items-center gap-2">
+          <i class="fa-solid fa-laptop-code"></i> Evolução Contínua & Prática Comercial
+        </p>
+        
+        <ul class="space-y-3.5 text-zinc-600 dark:text-zinc-300 ml-4 list-disc text-[15px] leading-relaxed">
+          <li>Mantenho-me em **constante evolução técnica**, impulsionando meu aprendizado por meio de cursos especializados e aplicando os conceitos estruturados da faculdade de Engenharia de Software.</li>
+          <li>Decidi iniciar o desenvolvimento e a venda de landing pages e sites institucionais de forma autônoma estrategicamente para **nunca me distanciar da programação**, garantindo contato diário com o código.</li>
+          <li>Utilizei o mercado real como laboratório prático para consolidar meus conhecimentos em **React, TypeScript e Tailwind CSS**, alcançando um amadurecimento técnico muito mais rápido e eficiente.</li>
+        </ul>
       </div>
     </div>
-
-    <p class="text-purple-600 dark:text-purple-400 font-semibold text-sm tracking-wide uppercase mb-4 flex items-center gap-2">
-      <i class="fa-solid fa-laptop-code"></i> Evolução Contínua & Prática Comercial
-    </p>
-    
-    <ul class="space-y-3.5 text-zinc-600 dark:text-zinc-300 ml-4 list-disc text-[15px] leading-relaxed">
-      <li>Mantenho-me em **constante evolução técnica**, impulsionando meu aprendizado por meio de cursos especializados e aplicando os conceitos estruturados da faculdade de Engenharia de Software.</li>
-      <li>Decidi iniciar o desenvolvimento e a venda de landing pages e sites institucionais de forma autônoma estrategicamente para **nunca me distanciar da programação**, garantindo contato diário com o código.</li>
-      <li>Utilizei o mercado real como laboratório prático para consolidar meus conhecimentos em **React, TypeScript e Tailwind CSS**, alcançando um amadurecimento técnico muito mais rápido e eficiente.</li>
-    </ul>
-  </div>
-</div>
 
   </div>
 </section>
@@ -849,6 +849,33 @@
           localStorage.setItem("theme", "dark");
         }
       });
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+    <script>
+      // Registra o plugin de Scroll do GSAP
+gsap.registerPlugin(ScrollTrigger);
+
+// Mapeia cada bloco da sua timeline
+document.querySelectorAll('.timeline-item').forEach((item) => {
+  const dot = item.querySelector('.timeline-dot');
+  
+  gsap.to(dot, {
+    scrollTrigger: {
+      trigger: item,          // O gatilho é o card da experiência entrando na tela
+      start: "top 75%",       // Dispara quando o topo do card chega a 75% da altura da tela
+      toggleActions: "play none none reverse", // Se rolar para cima, ele desfaz o brilho suavemente
+    },
+    backgroundColor: "#6366f1", // Muda a cor interna para o roxo/indigo elétrico
+    borderColor: "#4f46e5",     // Ajusta a borda externa
+    scale: 1.25,                // Dá um leve pulso de tamanho para destacar o ponto ativo
+    boxShadow: "0 0 20px 6px rgba(99, 102, 241, 0.65)", // Cria o efeito neon de brilho profundo
+    duration: 0.5,
+    ease: "power2.out"
+  });
+});
     </script>
   </body>
 </html>
